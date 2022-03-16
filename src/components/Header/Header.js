@@ -36,9 +36,9 @@ export default function Header() {
                     <div className="main-text">
                         BNB
                     </div>
-                    <div className="main-circle rotate-circle">
+                    {/* <div className="main-circle rotate-circle">
                         <img src={BnbCircle} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </section>
     </div>

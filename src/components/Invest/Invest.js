@@ -1,5 +1,6 @@
 import React from 'react'
 import BnbCircle from '../../assets/img/bnb-circle.png'
+import Bnb from '../../assets/img/bnb.png'
 import { ethers } from "ethers";
 import $ from 'jquery'
 let jQuery = $
@@ -302,10 +303,11 @@ export default function Invest() {
     <div>
       <section className="invest" id="invest">
                 <div className="container">
-                    <div className="section-title">
+                    <div className="section-title" style={{display:'flex', alignItems:'center', columnGap:'20px'}}>
                         <h2>
-                            TIME to INVEST
+                            TIME to INVEST 
                         </h2>
+                        <img style={{width:'3.5rem'}} src={Bnb} alt="" />
                     </div>
                     <div className="invest-block f-jcsb">
                         <div className="invest-wrap">
@@ -315,7 +317,10 @@ export default function Invest() {
                                         Total Invested
                                     </h3>
                                     <p className="invest-list__value"><span id="totalInvested"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
                                 <li className="invest-list__item">
@@ -323,7 +328,10 @@ export default function Invest() {
                                         Total Withdrawals
                                     </h3>
                                     <p className="invest-list__value"><span id="totalWithdrawals"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
 
@@ -342,6 +350,7 @@ export default function Invest() {
                                     <span className="invest-connect__token f-center-center">
                                         BNB
                                     </span>
+                                    
                                     <input id="investAmount" type="" name="invest" placeholder="500" step="" />
                                     <button onClick={deposit} className="main-btn main-btn_blue invest-connect__btn">
                                         Invest Now
@@ -359,7 +368,10 @@ export default function Invest() {
                                         Your Total Deposits
                                     </h3>
                                     <p className="invest-list__value"><span id="userInvested"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
                                 <li className="invest-list__item">
@@ -367,7 +379,10 @@ export default function Invest() {
                                         Your Withdrawals
                                     </h3>
                                     <p className="invest-list__value"><span id="userWithdrawn"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
                                 <li className="invest-list__item">
@@ -375,7 +390,10 @@ export default function Invest() {
                                         Your Income
                                     </h3>
                                     <p className="invest-list__value"><span id="calculateReward"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
                                 <li className="invest-list__item">
@@ -383,7 +401,10 @@ export default function Invest() {
                                         Referral Rewards
                                     </h3>
                                     <p className="invest-list__value"><span id="totalUserRefsAmount"></span>
-                                        BNB
+                                         BNB
+                                    </p>
+                                    <p style={{fontSize:'1.3rem', fontWeight:'bold', color:'#565454', marginTop:'10px'}}>
+                                        $ 0
                                     </p>
                                 </li>
                             </ul>
@@ -402,9 +423,9 @@ export default function Invest() {
                     <div className="invest-theme">
                         Profit
                     </div>
-                    <div className="invest-circle rotate-circle">
+                    {/* <div className="invest-circle rotate-circle">
                         <img src={BnbCircle} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </section>
     </div>

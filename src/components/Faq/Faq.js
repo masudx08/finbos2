@@ -183,9 +183,9 @@ export default function Faq() {
                     <div className="faq-theme">
                         BNB
                     </div>
-                    <div className="faq-circle rotate-circle">
+                    {/* <div className="faq-circle rotate-circle">
                         <img src={BnbCircle} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </section>
     </div>

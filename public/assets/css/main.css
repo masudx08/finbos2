@@ -685,6 +685,11 @@ section {
 .invest-list {
   min-height: 410px;
 }
+.invest-list__value{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color:#f7b016
+}
 
 .invest-list_accent .invest-list__item::after {
   background: #F5C55A;
