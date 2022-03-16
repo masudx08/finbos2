@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Logo from '../../assets/img/logo.png'
+import PdfFile from '../../assets/docs/wp.pdf'
 export default function Navbar() {
   return (
     <div>
@@ -7,7 +8,7 @@ export default function Navbar() {
             <div class="container f-center-jcsb">
                 <div class="header-wrap f-center">
                     <div class="header-logo">
-                        <img src="assets/img/logo.png" alt="" />
+                        <img src={Logo} alt="" />
                     </div>
                     <nav class="header-nav">
                         <ul class="header-menu f-center">
@@ -35,7 +36,7 @@ export default function Navbar() {
                     </nav>
                 </div>
                 <div class="header-control f-center">
-                    <a href="assets/docs/wp.pdf" class="header-link main-btn" target="_blank">
+                    <a href={PdfFile} class="header-link main-btn" target="_blank">
                         Whitepaper
                     </a>
                     <div class="header-toggle">
